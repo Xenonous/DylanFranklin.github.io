@@ -1,0 +1,290 @@
+/**********
+Entire Webpage CSS
+**********/
+
+  body{
+    /*We want the background color to be grey. Normally Bootstrap would get in the way of this, so we need to add "!important".*/
+    background-color:hsl(0, 0%, 29%) !important;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  hr{
+    color: white !important;
+  }
+
+/**********
+Homepage CSS
+**********/
+
+  /*BackgroundImage*/
+  .bgimage {
+    height:100vh;
+    background: url("./assets/images/DeveloperPortfolioBackgroundImage.avif");
+    background-size:cover;
+    position:relative;
+  }
+
+  /*MainText*/
+  .hero-title {
+    font-size: 4.5rem;
+  }
+
+  /*SmallDescription*/
+  .hero-desc {
+    font-size: 2rem;
+  }
+
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+/**********
+About Me CSS
+**********/
+
+  /*Changes the color of the section.*/
+  #about{
+    background-color: hsl(0, 0%, 11%);
+  }
+
+/**********
+Technical Skills CSS
+**********/
+
+  #skills{
+    background-color: hsl(0, 0%, 15%);
+  }
+
+  ul{
+    /*Removes bullet points.*/
+    list-style: none;
+  }
+
+  
+/*  GRAYSCALE ANIMATION. REMOVE THE COMMENTS IF YOU WANT TO ENABLE IT.
+  
+  .pythonIcon{
+    filter: grayscale();
+    transition: all .8s ease;
+  }
+
+  .pythonIcon:hover{
+    filter:none;
+  }
+  
+  .javaIcon{
+    filter: grayscale();
+    transition: all .8s ease;
+  }
+
+  .javaIcon:hover{
+    filter: none;
+  }
+
+  .javaScriptIcon{
+    filter: grayscale();
+    transition: all .8s ease;
+  }
+
+  .javaScriptIcon:hover{
+    filter: none;
+  }
+
+  .cplusplusIcon{
+    filter: grayscale();
+    transition: all .8s ease;
+  }
+
+  .cplusplusIcon:hover{
+    filter: none;
+  }
+
+  .HTMLandCSSIcons{
+    display: inline;
+    filter: grayscale();
+    transition: all .8s ease;
+  }
+
+  .HTMLandCSSIcons:hover{
+    filter: none;
+  }
+
+  .sqlIcon{
+    filter: grayscale();
+    transition: all .8s ease;
+  }
+
+  .sqlIcon:hover{
+    filter: none;
+  }
+
+  .numpyIcon{
+    filter: grayscale();
+    transition: all .8s ease;
+  }
+
+  .numpyIcon:hover{
+    filter: none;
+  }
+
+  .pandasIcon{
+    filter: grayscale();
+    transition: all .8s ease;
+  }
+
+  .pandasIcon:hover{
+    filter: none;
+  }
+
+  .bootstrapIcon{
+    filter: grayscale();
+    transition: all .8s ease;
+  }
+
+  .bootstrapIcon:hover{
+    filter: none;
+  }
+
+  .jQueryIcon{
+    filter: grayscale();
+    transition: all .8s ease;
+  }
+
+  .jQueryIcon:hover{
+    filter: none;
+  }
+
+  .javaFXIcon{
+    filter: grayscale();
+    transition: all .8s ease;
+  }
+
+  .javaFXIcon:hover{
+    filter: none;
+  }
+
+  .moreIcon{
+    filter: grayscale();
+    transition: all .8s ease;
+  }
+
+  .moreIcon:hover{
+    filter: none;
+  }
+
+  .mySQLIcon{
+    filter: grayscale();
+    transition: all .8s ease;
+  }
+
+  .mySQLIcon:hover{
+    filter: none;
+  }
+
+  .postgreSQLIcon{
+    filter: grayscale();
+    transition: all .8s ease;
+  }
+
+  .postgreSQLIcon:hover{
+    filter: none;
+  }
+
+  .JDBCIcon{
+    filter: grayscale();
+    transition: all .8s ease;
+  }
+
+  .JDBCIcon:hover{
+    filter: none;
+  }
+
+  .visualStudioCodeIcon{
+    filter: grayscale();
+    transition: all .8s ease;
+  }
+
+  .visualStudioCodeIcon:hover{
+    filter: none;
+  }
+
+  .intelliJIcon{
+    filter: grayscale();
+    transition: all .8s ease;
+  }
+
+  .intelliJIcon:hover{
+    filter: none;
+  }
+
+  .gitIcons{
+    display: inline;
+    filter: grayscale();
+    transition: all .8s ease;
+  }
+
+  .gitIcons:hover{
+    filter: none;
+  }
+
+*/
+
+
+/**********
+Projects CSS
+**********/
+
+  #projects{
+  background-color: hsl(0, 0%, 22%);
+  }
+
+  .projectLists{
+    list-style:circle;
+  }
+
+  .carousel-control-prev-icon{
+    /*Dark theme*/
+    filter: brightness(0%);
+  }
+
+  .carousel-control-next-icon{
+    /*Dark theme*/
+    filter: brightness(0%);
+  }
+
+  ul ul{
+    list-style: circle;
+  }
+
+/**********
+Contact CSS
+**********/
+
+  #contact{
+    background-color: hsl(0, 0%, 27%);
+  }
+
+/**********
+Footer CSS
+**********/
+.social-icons {
+  font-size: 36px;
+  cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+  color: #008000;
+}
+.fab {
+  color: #000000;
+}
+/* footer styling */
+#footer {
+  background-color: #808080;
+  text-align: center;
+}
