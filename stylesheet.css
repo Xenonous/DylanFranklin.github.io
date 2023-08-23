@@ -66,6 +66,11 @@ Technical Skills CSS
     list-style: none;
   }
 
+  #skills li{
+      display: inline-block;
+      margin: 5px;
+  }
+
   
 /*  GRAYSCALE ANIMATION. REMOVE THE COMMENTS IF YOU WANT TO ENABLE IT.
   
@@ -273,18 +278,22 @@ Contact CSS
 /**********
 Footer CSS
 **********/
-.social-icons {
-  font-size: 36px;
-  cursor: pointer;
-}
-.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
-  color: #008000;
-}
-.fab {
-  color: #000000;
-}
-/* footer styling */
-#footer {
-  background-color: #808080;
-  text-align: center;
-}
+
+  /*Footer Styling*/
+  #footer {
+    background-color: #808080;
+    text-align: center;
+  }
+
+  .social-icons{
+    font-size: 36px;
+    cursor: pointer;
+  }
+
+  .fa-linkedin:hover{
+    color: #008000;
+  }
+
+  .fab{
+    color: #000000;
+  }
