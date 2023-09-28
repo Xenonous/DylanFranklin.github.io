@@ -10,67 +10,70 @@
   <link rel="stylesheet" href="./stylesheet.css">
   <!--Link FontAwesome to our website for icon usage.-->
   <script src="https://kit.fontawesome.com/3a5db56ff9.js" crossorigin="anonymous"></script>
+  <!--Link Google Fonts to our website for custom font usage.-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Caveat&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
   <!--Link Bootstrap styling to our website via CDN-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <!--Title-->
   <title>Dylan Franklin Developer Website Portfolio</title>
 </head>
 
-
 <body>
-
-<!--Bootstrap Navbar.-->
+  <!--Bootstrap Navbar.-->
   <!--
     Creation of the Bootstrap Navbar section. Some key class/id names to note are...
         1. "fixed-top" - This class makes the Navbar stay FIXED to the top of the screen, even when a user scrolls around the page.
         2. "navbar-dark","bg-dark" - These two classes set the theme of the navbar. This combo in particular sets the background to back, and the text/button to white.
         3. "py-3" - Short for "padding-top:" AND "padding-bottom:". Setting this value to 3 makes the Navabar slightly bigger.
   -->
-  <nav class="navbar navbar-expand-lg fixed-top navbarScroll navbar-dark bg-dark py-3">
-      <div class="container">
-          <!--Navigation Bar Brand.-->
-          <a class="navbar-brand text-white" href="#">
-            <img src="./assets/icons/DylanFranklinNavbarIcon.png" width="50" height="50" class="d-inline-block mx-3 alt="A black hexagon with the letter D engraved in the middle.">Dylan Franklin
-          </a>
-          <!--Navigation Bar button-->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <!--Navigation Bar collapse menu.-->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto">
-                  <li class="nav-item active">
-                      <a class="nav-link" href="#home">Home</a>
-                  </li>
+  <nav class="navbar navbar-expand-lg fixed-top navbarScroll navbar-dark bg-dark py-2">
+    <div class="container">
+        <!--Navigation Bar Brand.-->
+        <a class="navbar-brand text-white" href="#">
+          <img src="./assets/icons/DylanFranklinNavbarIcon.png" width="50" height="50" class="d-inline-block mx-3 alt="A black hexagon with the letter D engraved in the middle.">Dylan Franklin
+        </a>
+        <!--Navigation Bar button-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Navigation Bar collapse menu.-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
 
-                  <li class="nav-item">
-                      <a class="nav-link" href="#about">About</a>
-                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
 
-                  <li class="nav-item">
-                      <a class="nav-link" href="#skills">Skills</a>
-                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
 
-                  <li class="nav-item">
-                      <a class="nav-link" href="#projects">Projects</a>
-                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
 
-                  <li class="nav-item">
-                      <a class="nav-link" href="#contact">Contact</a>
-                  </li>
-              </ul>   
-          </div>
-      </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>   
+        </div>
+    </div>
   </nav>
 
-<!--Home/Bootstrap Hero Section-->
+  <!--Home/Bootstrap Hero Section-->
   <!--
     Creating of the Homepage section. Some key class/id names to note are...
       1. "container-fluid" - Normally, we would use "container", but "container-fluid" will fill 100% of the screen no matter what device the user is on. For this reason, it's perfect for this.
       2. "id="home"" - All sections will have this from now on. This will be used to allow the Navigation bar to send the user to where they want.
       3.  We already know about "row" and "col-...-...", but notice how it's all set to 12 (MAX) because of Bootstraps 12 column rule.  
   -->
-  <section class="bgimage" id="home">
+  
+  <section id="home">
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
@@ -81,7 +84,7 @@
     </div>
   </section>
 
-<!--About Section-->
+  <!--About Section-->
   <!--
     Creating of the About section. Some key class/id names to note are...
       1. Notice how in our "row" div we have two columns specified. Both are "col-lg-6", meaning both take up half of the avaliable screen on lg (laptops) devices.
@@ -91,19 +94,19 @@
   -->
   <section id="about">
     <div class="container mt-4 pt-4 mb-4 pb-4">
-        <h1 class="text-center text-light">About Me</h1> <hr>
+        <h1 class="text-center text-light display-4">About Me</h1> <hr>
         <div class="row mt-4">
             <div class="col-lg-6">
 
-              <div id="aboutCarousel" class="carousel slide">
+              <div id="aboutCarousel" class="carousel slide mt-2">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./assets/images/DylanFranklinPicture.jpg" class="d-block w-100 border" alt="Picture of Dylan Franklin at his 2019 Highschool graduation ceremony.">
+                  <div class="carousel-item active specialImgAnimation">
+                    <img src="./assets/images/DylanFranklinPicture.jpg" class="d-block w-100" alt="Picture of Dylan Franklin at his 2019 Highschool graduation ceremony.">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>High School Graduation</h5>
                       <p>I graduated High School from South St. Paul Secondary in 2019 and College from Western Governors University in 2023. </p>
@@ -135,40 +138,44 @@
               </div>
             </div>
 
-            <div class="col-lg-6">
+            <div id="aboutText" class="col-lg-6 mt-3">
                 <p class="text-light"> Hello! I'm Dylan Franklin, a WGU college graduate looking for work that'll help me grow as a developer. 
                     I've always had a fancy for programming and technology as a whole. 
                     Even as a young teenager, I was surrounded by and immersed in programming languages like Lua through video games like ROBLOX. 
                     Playing and even creating games as a kid helped in acting as a catalyst for my past and current fascination with programming. 
-                    Technology and programming were such a fascination for me that my 10th-grade personal project, which is a long-term project that you spend a whole year on, was to learn Python and create something from it.
-                    
+                    Technology and programming were such a fascination to me that my 10th-grade personal project was to learn Python and create something basic from it.
                 </p>
+
                 <div class="mt-3">
-                    <div class="col-md-12">
-                        <p class="text-light">Naturally, this led me to pursue a degree in Computer Science fresh out of high school, where I continue to explore the frontiers of innovation and technology. 
+                  <div class="col-md-12">
+                    <p class="text-light">Naturally, this led me to pursue a degree in Computer Science fresh out of high school, where I continued to explore the frontiers of innovation and technology. 
                             However, my interests go beyond the digital screen – I'm also interested in building computers, bowling, and partaking in whatever events I and my friends scheme up during the hottest and coldest of weather here in Minnesota.
-                        </p>
-                    </div>
+                    </p>
+                  </div>
+
                     <div class="col-md-12">
-                        <p class="text-light">During my free time, I’m most likely learning something new in regard to technology and programming. 
+                      <p class="text-light">During my free time I’m most likely learning something new in regard to technology and programming. 
                             Recently, I’ve expanded my front-end developer skills to include JavaScript, Bootstrap, jQuery, Node.js, and more. 
                             I also enjoy keeping up with the latest tech trends, even if their growth can be a bit overwhelming at times.
-                        </p>
+                      </p>
                     </div>
                 </div>
+
                 <div class="mt-3">
-                    <p class="text-light"> So there you have it, a little glimpse into my world. 
+                  <p class="text-light"> So there you have it, a little glimpse into my world. 
                         If you’re as passionate about programming and technology as I am, I'm excited to connect and see where our journey takes us!
-                    </p>
+                  </p>
                 </div>
+
             </div>
+            
         </div>
   </section>
 
-<!--Skills Section-->
+  <!--Skills Section-->
   <section id="skills">
     <div class="container mt-4 pt-4 mb-4 pb-4">
-      <h1 class="text-center text-light">Technical Skills & Knowledge</h1> <hr>
+      <h1 class="text-center text-light display-4">Technical Skills & Knowledge</h1> <hr>
       <!--ROW #1-->
       <div class="row">
         <!--COLUMN #1-->
@@ -313,7 +320,7 @@
 <!--Projects Section-->
   <section id="projects">
     <div class="container mt-4 pt-4 mb-4 pb-4">
-      <h1 class="text-center text-light">Projects</h1> <hr>
+      <h1 class="text-center text-light display-4">Projects</h1> <hr>
       <!--1st Project-->
       <div class="row">
         <!--FIRST PART (DESCRIPTION)-->
@@ -593,7 +600,7 @@
 <!--Contact Section-->
   <section id="contact">
     <div class="container mt-4 pt-4 mb-4 pb-4 contactContent">
-      <h1 class="text-center text-light">Contact Me</h1> <hr>
+      <h1 class="text-center text-light display-4">Contact Me</h1> <hr>
         <div class="row mt-4 mb-4">
           <div class="col-lg-6">
             <!--Location-->
@@ -636,6 +643,22 @@
   </footer>
 
 
+  <!--Animation-->
+  <div class="area" >
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div >
+
   <!--Dynamic text used on the Homepage-->
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <script>
@@ -647,12 +670,12 @@
     })
   </script>
 
-  <!--Link Bootstrap functionalities to our website via CDN-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  <!--Linking HTML file to JavaScript file for custom functionalities.-->
-  <script src="./index.js"></script>
-  <!--Linking jQuery to our development enviornment for easier DOM traversal and other benefits relating to JavaScript-->
-  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+   <!--Link Bootstrap functionalities to our website via CDN-->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+   <!--Linking jQuery to our development enviornment for easier DOM traversal and other benefits relating to JavaScript-->
+   <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+   <!--Linking HTML file to JavaScript file for custom functionalities.-->
+   <script src="./index.js"></script>
 
 </body>
 
